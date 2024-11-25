@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrimony Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+</head>
+<style>
+  nav  a{
+    margin-left: 100px;
+  }
+  
+    body {
+            font-family: Arial, sans-serif;
+            /* display: flex; */
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        #scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Hidden by default */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<body>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#">Matrimony<span>Match</span></a>
+    </div>
+    <!-- <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonials">Success Stories</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/login.html" class="btn-login">Login</a></li>
+      </ul>
+  </button>
+  
+    </nav> -->
+  </header>
+ 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Aboutus.html">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link " href="#">navbar</a> -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="Contactus.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="sidebar">
+  <h3 id="usernameDisplay"></h3>
+</div>
+<script>
+var username = localStorage.getItem('username');
+if (username) {
+    document.getElementById('usernameDisplay').textContent = 'Hello, ' + username;
+} 
+</script>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Match</h1>
+      <p>Your journey to a lifetime of happiness starts here.</p>
+      <a href="#" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We are committed to connecting individuals for meaningful relationships and lifelong bonds.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <h2>Why Choose Us</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>Verified Profiles</h3>
+        <p>Every profile is manually verified to ensure authenticity.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Privacy First</h3>
+        <p>Your data and personal information are secure with us.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Advanced Matchmaking</h3>
+        <p>Smart algorithms to help you find the perfect match.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>Success Stories</h2>
+    <div class="testimonial">
+      <p>"We found each other through this platform, and now we are happily married!"</p>
+      <span>- John & Jane</span>
+    </div>
+    <div class="testimonial">
+      <p>"A reliable and trustworthy service. Highly recommended!"</p>
+      <span>- Sarah</span>
+    </div>
+  </section>
+
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  <script>
+    // Get the button element
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down 100px
+window.onscroll = function() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+};
+
+// Scroll to the top of the document when the button is clicked
+scrollToTopBtn.onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+  </script>
+
+
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <p>Contact Us: info@matrimonymatch.com | +91 8187812986</p>
+    <p>&copy; 2024 MatrimonyMatch. All Rights Reserved by <a href="#">Mr.John Samuel</a></p>
+  </footer>
+</body>
+</html>

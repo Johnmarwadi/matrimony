@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  header .logo span {
+    color: #e63946;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-links .btn-login {
+    background-color: #e63946;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .hero {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center/cover;
+    color: white;
+    padding: 5rem 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content .btn-primary {
+    background-color: #e63946;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .about-section, .features-section, .testimonials-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .feature-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  footer.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
